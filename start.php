@@ -8,5 +8,5 @@
  */
 
 Autoloader::map(array(
-	'Facebook' => Bundle::path('Facebook').'Facebook/Facebook.php',
+	'Facebook' => Bundle::path('Facebook').'vendor/Facebook.php',
 ));
