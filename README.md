@@ -28,10 +28,14 @@ Add the following to your **application/bundles.php** file:
 
 ## Usage
 
+	//manually or dynamically set the appId and Secret
     $facebook = new \Facebook\Facebook(array(
       'appId'  => 'YOUR_APP_ID',
       'secret' => 'YOUR_APP_SECRET',
     ));
+
+    //use facebook.php config file within the config folder values
+    $facebook = IoC::resolve('facebook');
 
     // Get User ID
     $user = $facebook->getUser();
@@ -57,6 +61,16 @@ Login or logout url will be needed depending on current user state.
     }
 
 [API]: http://developers.facebook.com/docs/api
+
+
+## Sample facebook.php config file contents
+
+Add the following to your **application/config/facebook.php** file:
+
+	return array(
+		'app_id' => '',
+		'secret' => '',
+	);
 
 
 ## Report Issues/Bugs
