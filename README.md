@@ -8,8 +8,7 @@ Utiises a fork of the original Facebook PHP SDK that's PSR-0 compliant and featu
 Facebook PHP SDK current as of v.3.2.2
 
 
-Facebook Platform
------
+# Facebook Platform
 
 The [Facebook Platform](http://developers.facebook.com/) is
 a set of APIs that make your app more social.
@@ -20,18 +19,14 @@ the Facebook PHP SDK is licensed under the Apache Licence, Version 2.0
 (http://www.apache.org/licenses/LICENSE-2.0.html).
 
 
-Bundle Registration
------
+# Bundle Registration
 
 Add the following to your **application/bundles.php** file:
 
 	'facebook-sdk' => array('auto' => true),
 
 
-Usage
------
-
-    require 'facebook-php-sdk/src/Facebook.php';
+# Usage
 
     $facebook = new \Facebook\Facebook(array(
       'appId'  => 'YOUR_APP_ID',
@@ -64,12 +59,6 @@ Login or logout url will be needed depending on current user state.
 [API]: http://developers.facebook.com/docs/api
 
 
-Report Issues/Bugs
-===============
+# Report Issues/Bugs
 
 Please use the issues tracker within Github.
-
-Report platform issues to Facebook
------
-[Bugs](https://developers.facebook.com/bugs)
-[Questions](http://facebook.stackoverflow.com)
