@@ -14,14 +14,11 @@ Autoloader::namespaces(array(
 Laravel\IoC::singleton('facebook', function()
 {
     if (Config::has('facebook')){
-	$config['appId'] = Config::get('facebook.appId');
-	$config['secret'] = Config::get('facebook.secret');
-	$config['fileUpload'] = Config::get('facebook.fileUpload', true);
 
 	return new Facebook(array(
             'appId' => Config::get('facebook.appId'),
             'secret' => Config::get('facebook.secret'),
-            'fileUpload' => Config::get('facebook.fileUpload'),
+            'fileUpload' => Config::get('facebook.fileUpload', true),
             ));
     }
 });
