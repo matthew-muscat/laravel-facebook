@@ -16,6 +16,7 @@
  */
 
 namespace Facebook;
+use Laravel\Session;
 
 require_once __DIR__ . '/BaseFacebook.php';
 
